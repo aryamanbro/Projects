@@ -1,0 +1,28 @@
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLEoBgEuaZCHHJAdY2YWNG--NUGgKkFDMMrQ&usqp=CAU");
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-size: cover;
+}
+h1{
+    color: goldenrod;
+    font-size: 70px;
+}
+p{
+    font-size: 45px;
+    color: white;
+    font-style: italic;
+}
+button{
+    color: #016f32;
+    background: goldenrod;
+    border: 0px solid;
+    width: 430px;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}

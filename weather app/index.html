@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title >Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <style>
+    .title {
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      font-variation-settings:
+      "wdth" 100;
+    }
+    .card{
+      transition: 0.4s;
+    }
+    .card:hover{
+      transform: scale(1.05);
+    }
+    .row{
+      padding-top: 20px;
+    }
+ 
+  </style>
+  <body>
+    <nav class="navbar bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold text">Weather App</a>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" id="inp" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" id="butn" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <h1 class="title" style="margin:10px;  text-align: center ;" >Weather for <span id="place">Delhi</span>  </h1>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center justify-content-center " style="padding-right: 10px; padding-left: 10px; ">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm  " >
+         
+          <div class="card-header py-3 text-bg-secondary">
+            <h4 class="my-0 fw-normal ">Temperature</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title" ><span id="temp">25</span> <small class="text-body-secondary fw-light" id="symbol">&degC</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li >Feels Like : <span id="feelslike"></span><small class="text-body-secondary fw-dark" id="symbol1">  &degC</small></li>
+              <li >Wind Chill Index : <span id="windchill"></span></li>
+              <li >Heat Index : <span id="heatindex"></span><small class="text-body-secondary fw-dark" id="symbol2">  &degC</small></li>
+            
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+         <img id="icon" src="/" width="150" height="150" style="align-self: center;">      </img>
+          <div class="card-body">
+            <h2 class="card-title pricing-card-title" id="sun"></h2>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Humidity : <span id="humidity"></span> %</li>
+              <li>Precipitation : <span id="prec"></span> mm</li>
+             
+            </ul>
+           
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3 text-bg-secondary border-secondary">
+            <h4 class="my-0 fw-normal">  Wind Info </h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title"><span id="wind"></span><small class="text-body-secondary fw-light"> km/h</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Wind Degree : <span id="winddeg"></span></li>
+              <li>Wind Direction : <span id="winddir"></span></li>
+              <li>UV : <span id="uv"> </span></li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+      <button type="button" class="  w-75 btn btn-lg btn-outline-primary" id="changer"  >Temp Info in Fahrenheit</button>
+
+    </div>
+    <div >
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>   
